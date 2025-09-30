@@ -116,8 +116,12 @@ src="https://www.facebook.com/tr?id=1121304192916603&ev=PageView&noscript=1"
       // अब यहां आप "next page redirect" भी कर सकते हो
       // window.location.href = "next-page.html";
     });
-
+    // page load होते ही auto-click कर दो (लेकिन sound तभी बजेगा जब browser allow करेगा)
+    window.addEventListener('load', () => {
+      continueBtn.click();
+    });
  
   </script>
 </body>
 </html>
+
